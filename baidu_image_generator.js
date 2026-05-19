@@ -9,7 +9,6 @@ class BaiduImageGenerator {
   async init() {
     this.browser = await chromium.launch({
       headless: true,
-      channel: 'chrome',
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
